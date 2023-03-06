@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <h1>Counter App</h1>
-  </header>
+  <router-view />
 </template>
 
 <script>
