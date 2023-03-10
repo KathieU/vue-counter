@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Home page</h1>
-        <router-link to="/counterpage">Counter</router-link>
+        <router-link to="/counter">Counter</router-link>
     </div>
 </template>
 
