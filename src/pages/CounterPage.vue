@@ -14,34 +14,23 @@
 </template>
 
 <script>
-import { computed, ref } from 'vue';
-import { useStore } from 'vuex';
+    import useCounter from "@/composable/useCounter";
 
-export default {
-    setup() {
-        const store = useStore();
+    export default {
+        setup() {
+            const { count, increment, decrement, reset, value, setValue } = useCounter();
 
-        const count = computed(() => store.state.count);
-
-        const increment = () => store.commit('increment');
-        const decrement = () => store.commit('decrement');
-        const reset = () => store.commit('reset');
-
-        let value = ref('');
-        const setValue = () => store.dispatch('setValue', Number(value.value));
-        
-        
-    return {
-      count,
-      increment,
-      decrement,
-      reset,
-      setValue,
-      value,
+            return {
+                count,
+                increment,
+                decrement,
+                reset,
+                value,
+                setValue,
+            };
+        },
     };
-    },
-       
-    };
+
 </script>
 
 <style scoped>
