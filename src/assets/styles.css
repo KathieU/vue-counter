@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-content {
+  background-color: rgb(146, 171, 97);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.link-button {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}

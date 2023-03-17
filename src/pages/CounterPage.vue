@@ -1,20 +1,27 @@
 <template>
     <div>
-        <h1>Counter page</h1>
-        <router-link to="/">Home</router-link>
-        <p>Count: {{ count }}</p>
-        <button @click="increment">Increment</button>
-        <button @click="decrement">Decrement</button>
-        <button @click="reset">Reset</button>
-        <div>
-            <input type = "number" v-model="value" />
-            <button @click="setValue">Set Value</button>
+        <nav-block :buttonText="'Home'" :routeName="'Home'"/>
+        <div class="page-content">
+            <p> {{ count }}</p>
+            <div class="counter">
+                <button @click="increment">+</button>
+                <button @click="reset">Reset</button>
+                <button @click="decrement">-</button>
+            </div>
+            
+            <div class="set-value">
+                <input type = "number" v-model="value" />
+                <button @click="setValue">Set Value</button>
+            </div>
         </div>
+        <footer-block />
     </div>
 </template>
 
 <script>
     import useCounter from "@/composable/useCounter";
+    import NavBlock from '@/components/NavBlock.vue';
+    import FooterBlock from "@/components/FooterBlock.vue";
 
     export default {
         setup() {
@@ -29,12 +36,33 @@
                 setValue,
             };
         },
+        components:{
+            NavBlock,
+            FooterBlock
+        },
     };
 
 </script>
 
 <style scoped>
+    .counter {
+        display: flex;
+    }
 
+    p {
+        font-size: 50px;
+    }
+
+    .set-value {
+        padding-top: 20px;
+    }
+
+    .set-value input {
+        /* height: 40px; */
+        
+        border-radius: 10px;
+        padding: 10px;
+    }
 </style> -->
 
 
