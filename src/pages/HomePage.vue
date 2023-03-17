@@ -26,7 +26,9 @@ import FooterBlock from '@/components/FooterBlock.vue';
 
 <style scoped>
     
-
+    h2 {
+        font-size: 50px;
+    }
     
 
     

@@ -58,10 +58,11 @@
     }
 
     .set-value input {
-        /* height: 40px; */
-        
+        background-color: #10002b;
         border-radius: 10px;
         padding: 10px;
+        color: #5a189a;
+        font-size: 20px;
     }
 </style> -->
 

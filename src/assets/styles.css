@@ -4,30 +4,36 @@
 }
 
 .page-content {
-  background-color: rgb(146, 171, 97);
+  background-color: #10002b;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   line-height: 1.8;
+  color: #e0aaff;
 }
 
 p {
   font-size: 20px;
 }
 
-h2 {
-  font-size: 50px;
-}
-
 button {
   padding: 10px;
-  border-radius: 10px;
+  border-color: #5a189a;
+  border-radius: 15px;
+  color: #5a189a;
+  background-color: #10002b;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #3c096c;
 }
 
 .link-button {
   text-decoration: none;
-  color: black;
+  color: #9d4edd;
   font-size: 20px;
 }

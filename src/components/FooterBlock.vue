@@ -20,7 +20,7 @@ export default {
         display: flex;
         position:fixed;
         bottom:0;
-        background-color: aqua;
+        background-color: #240046;
         width: 100%;
         justify-content: center;
         align-items: center;
