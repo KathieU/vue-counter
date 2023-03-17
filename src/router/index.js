@@ -9,7 +9,8 @@ const router = createRouter({
   routes: [
     { name: "Home", path: "/", component: HomePage },
     { name: "Counter", path: "/counter", component: CounterPage },
-    { name: "Error", path: "/:errorpage(.*)", component: ErrorPage },
+    { path: "/404", name: "page-not-found", component: ErrorPage },
+    { path: "/:catchAll(.*)", redirect: "/404" },
   ],
 });
 
